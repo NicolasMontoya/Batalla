@@ -1,0 +1,48 @@
+<div class='row'>
+	<div class='col-md-3'></div>
+		<div id='mitablero' class='col-md-3 tableros'>
+			<h3>Usuario</h3>
+			<table class='table-bordered bg-info' id='tbluser'>
+			<?php for($i=1;$i<7;$i++):?>
+				<tr>	
+				<?php for($j=1;$j<7;$j++):?>
+				
+					<td><button class='btn-info center-block btnuser' type='button' id='pos-<?=(6*($i-1)+$j)?>' ><?=(6*($i-1)+$j)?></button></td>
+				<?php endfor;?>		
+				</tr>
+			<?php endfor;?>		
+				
+			</table>
+		</div>
+		<div id='sutablero' class='col-md-3 tableros'>
+			<h3>Máquina</h3>
+			<table class='table-bordered bg-warning' id='tblmachine'>
+				<?php for($i=1;$i<7;$i++):?>
+				<tr>	
+				<?php for($j=1;$j<7;$j++):?>
+				
+					<td><button class='btn-warning center-block btnmachine' type='button' id='supos-<?=(6*($i-1)+$j)?>' disabled="disabled"><?=(6*($i-1)+$j)?></button></td>
+				<?php endfor;?>		
+				</tr>
+			<?php endfor;?>
+
+			</table>
+		</div>
+</div>
+<br>
+<br>
+<div class="container theme-showcase" role="main">
+	<div class="page-header">
+		<div class="col-lg-2 text-center">
+			<p>
+				<button type="button" class="btn btn-primary btn-sm" onclick="location.href='http://localhost/batallanaval/auth/logout'">Logout</button>
+			</p>
+			<button type="button" class="btn btn-primary btn-sm" onclick="location.href='http://localhost/batallanaval/'">Reiniciar</button>
+		</div>
+		<div id="dialog" class="appear">Puede comenzar a jugar</div>
+		<br>
+		<br>
+		<br>
+
+	</div>
+</div>
